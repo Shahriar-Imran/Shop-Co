@@ -18,8 +18,69 @@
         <title>Shop.Co</title>
     </head>
     <body>
-        
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1 class="navbar-brand fs-2 fw-bold text-uppercase">
+                    shop.co
+                </h1>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark fw-regular"
+                                >Shop <i class="fas fa-angle-down"></i
+                            ></a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="#top-selling"
+                                class="nav-link text-dark fw-regular"
+                                >On Sale</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="#new-arrival"
+                                class="nav-link text-dark fw-regular"
+                                >New Arrival</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark fw-regular"
+                                >Brands</a
+                            >
+                        </li>
+                    </ul>
+                </div>
 
+                <form class="nav-search" role="search">
+                    <i class="fas fa-search"></i>
+                    <input
+                        type="search"
+                        placeholder="Search for products..."
+                        aria-label="Search products"
+                    />
+                </form>
+
+                <div class="nav-actions">
+                    <a href="#" aria-label="Cart"
+                        ><i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="#" class="bg-transparent">
+                        <i class="far fa-user-circle fa-1x text-dark"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
 
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
