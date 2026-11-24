@@ -47,6 +47,10 @@
     width: 56px;
 }
 
+.brands img {
+    height: 60px; 
+}
+
 @media (max-width: 1200px) {
     .header .section-title {
         font-size: 48px !important;
@@ -83,5 +87,9 @@
         top: 40%;
         left: 4%;
         width: 44px;
+    }
+
+    .brands img {
+        height: 50px;
     }
 }
