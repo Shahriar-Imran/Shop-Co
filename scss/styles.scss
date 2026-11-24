@@ -1,10 +1,16 @@
 .section-title, 
 .navbar-brand {
     font-family: 'Integral CF', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
-.navbar-brand {
-    font-weight: 900;
+.section-title {
+    font-size: 48px !important;
+}
+
+.text-secondary {
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .input-group {
@@ -14,3 +20,28 @@
     }
     
 }
+
+.header .section-title {
+    font-size: 64px !important;
+}
+
+@media (max-width: 1200px) {
+    .header .section-title {
+        font-size: 48px !important;
+    }
+
+    .stat h1 {
+        font-size: 24px !important;
+        
+    }
+    .stat p {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .section-title {
+        font-size: 36px !important;
+    }
+}
+

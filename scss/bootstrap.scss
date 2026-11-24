@@ -3,7 +3,6 @@ $font-family-sans-serif: 'Satoshi', sans-serif;
 // Colors
 $primary: rgba(240, 238, 237, 1);
 $secondary: rgba(0, 0, 0, 0.6);
-$text-secondary: rgba(0, 0, 0, 0.4);
 $dark: #000;
 $body-bg: #fff;
 $body-color: #fff;
@@ -16,7 +15,7 @@ $spacers: (
     2: $spacer * 0.5,
     3: $spacer,
     4: $spacer * 1.5,
-    5: $spacer * 3,
+    5: $spacer * 2.75,
     6: $spacer * 6,
     7: $spacer * 8,
     8: $spacer * 12,
@@ -54,5 +53,7 @@ $input-border-radius: $input-radius;
 $input-border-radius-sm: $input-radius;
 $input-border-radius-lg: $input-radius;
 $input-border-color: none;
+
+$enable-negative-margins: true;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
