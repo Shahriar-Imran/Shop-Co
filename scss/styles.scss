@@ -1,6 +1,6 @@
-.section-title, 
+.section-title,
 .navbar-brand {
-    font-family: 'Integral CF', sans-serif;
+    font-family: "Integral CF", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -14,15 +14,37 @@
 }
 
 .input-group {
-    i, 
+    i,
     input {
         color: rgba(0, 0, 0, 0.4) !important;
     }
-    
 }
 
 .header .section-title {
     font-size: 64px !important;
+}
+
+.header-main-img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.header .star-bg {
+    z-index: 1;
+    top: 20%;
+    right: 0;
+    width: 104px;
+}
+
+.header .star-sm {
+    z-index: 1;
+    top: 58%;
+    left: 4%;
+    width: 56px;
 }
 
 @media (max-width: 1200px) {
@@ -32,7 +54,6 @@
 
     .stat h1 {
         font-size: 24px !important;
-        
     }
     .stat p {
         font-size: 14px !important;
@@ -43,5 +64,24 @@
     .header .section-title {
         font-size: 36px !important;
     }
-}
 
+    .header-main-img {
+        position: relative;
+        inset: 0;
+        height: 75%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .header .star-bg {
+        width: 76px;
+    }
+
+    .header .star-sm {
+        z-index: 1;
+        top: 40%;
+        left: 4%;
+        width: 44px;
+    }
+}
