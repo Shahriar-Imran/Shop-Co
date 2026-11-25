@@ -85,6 +85,79 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.customer-reviews {
+    overflow: hidden;
+}
+
+.customer-reviews-header {
+    gap: 1rem;
+}
+
+#customer-reviews-title {
+    font-size: 44px !important;
+}
+
+.customer-reviews-controls button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.customer-reviews-window {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.customer-reviews-track {
+    gap: 16px;
+    width: max-content;
+    padding-inline: max(1rem, calc((100vw - 1106px) / 2));
+}
+
+.customer-review-card {
+    flex: 0 0 min(358px, calc((100vw - 64px) / 3));
+    min-height: 215px;
+    padding: 22px 28px;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    background: #fff;
+    scroll-snap-align: start;
+}
+
+.customer-review-card .rating-stars {
+    margin-bottom: 0.5rem !important;
+    font-size: 20px;
+}
+
+.customer-review-name {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.5rem;
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.customer-review-name i {
+    color: #00b67a;
+    font-size: 1rem;
+}
+
+.customer-review-quote {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
 .dess-style-img {
     display: block;
     width: 100%;
@@ -133,5 +206,47 @@
 
     .brands img {
         height: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #customer-reviews-title {
+        max-width: 220px;
+        font-size: 30px !important;
+        line-height: 1.05;
+    }
+
+    .customer-reviews-controls {
+        gap: 0.75rem !important;
+    }
+
+    .customer-reviews-controls button {
+        font-size: 1.25rem;
+    }
+
+    .customer-reviews-window {
+        margin-top: 1.25rem !important;
+    }
+
+    .customer-reviews-track {
+        padding-inline: 18px;
+    }
+
+    .customer-review-card {
+        flex-basis: calc(100vw - 36px);
+        min-height: 166px;
+        padding: 18px 20px;
+    }
+
+    .customer-review-card .rating-stars {
+        font-size: 18px;
+    }
+
+    .customer-review-name {
+        font-size: 1rem;
+    }
+
+    .customer-review-quote {
+        font-size: 0.8125rem;
     }
 }
