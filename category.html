@@ -22,9 +22,17 @@
         <title>Shop.Co</title>
     </head>
     <body>
+        <div class="promo-banner bg-dark d-block">
+            <div class="container text-white text-center py-2 position-relative">
+                Sign up and get 20% off to your first order. <a href="#" class="text-white fw-semibold text-decoration-underline">Sign Up Now</a>
+                <button class="promo-banner-close btn text-white p-0 position-absolute top-50 end-0 translate-middle-y me-3" type="button" aria-label="Close announcement">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-lg sticky-top">
             <div
-                class="container d-flex justify-content-between align-items-center gap-3"
+                class="container d-flex justify-content-between align-items-center gap-3 border-bottom pb-4"
             >
                 <div
                     class="navbar-left d-flex justify-content-center align-items-center"
@@ -39,7 +47,11 @@
                     >
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <h1 class="navbar-brand fs-2 mb-0">shop.co</h1>
+                    <a href="index.html" class="text-decoration-none">
+                        <h1 class="navbar-brand fs-2 mb-0">
+                            shop.co
+                        </h1>
+                    </a>
                 </div>
                 <div
                     class="collapse navbar-collapse"
@@ -222,20 +234,21 @@
                 </aside>
 
                 <section class="col-lg-9">
-                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
-                        <div class="d-flex align-items-baseline flex-wrap gap-2">
-                            <h1 class="fs-3 fw-bold text-dark mb-0" id="category-title">Casual</h1>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                        
+                        <h1 class="fs-3 fw-bold text-dark mb-0" id="category-title">Casual</h1>
+                        
+                        <div class="d-flex align-items-baseline justify-content-between gap-2">
                             <span class="small text-secondary">Showing 1-10 of 100 Products</span>
-                        </div>
-                        <button class="btn btn-light rounded-circle p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryFilters" aria-controls="categoryFilters" aria-label="Open filters">
-                            <i class="bi bi-sliders2-vertical"></i>
-                        </button>
-                        <div class="d-none d-lg-block small text-secondary">
-                            Sort by: <button class="btn btn-sm p-0 text-dark fw-semibold">Most Popular <i class="bi bi-chevron-down"></i></button>
-                        </div>
+                            <button class="btn btn-light rounded-circle p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryFilters" aria-controls="categoryFilters" aria-label="Open filters">
+                                <i class="bi bi-sliders2-vertical"></i>
+                            </button>
+                            <div class="d-none d-lg-block small text-secondary">
+                                Sort by: <button class="btn btn-sm p-0 text-dark fw-semibold">Most Popular <i class="bi bi-chevron-down"></i></button>
+                            </div>
                     </div>
 
-                    <div class="row g-3 g-lg-4">
+                    <div class="row g-3 g-lg-4 border-bottom py-4">
                         <div class="col-6 col-lg-4">
                             <article class="category-product">
                                 <img src="images/top-tshirt.svg" alt="Graphic T-shirt" class="img-fluid w-100">
@@ -310,14 +323,13 @@
                         </div>
                     </div>
 
-                    <hr class="my-4">
-                    <nav class="pagination-area d-flex justify-content-between align-items-center">
+                    <nav class="pagination-area d-flex justify-content-between align-items-center py-4 w-100">
                         <button class="btn btn-sm btn-outline-secondary px-2 py-1"><i class="bi bi-arrow-left"></i> <span class="d-none d-sm-inline">Previous</span></button>
-                        <ul class="pagination pagination-sm mb-0">
+                        <ul class="pagination justify-content-center pagination-sm mb-0">
                             <li class="page-item active"><a class="page-link text-dark" href="#">1</a></li>
                             <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
                             <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
-                            <li class="page-item disabled text-secondary"><span class="page-link">...</span></li>
+                            <li class="page-item disabled"><span class="page-link text-secondary">...</span></li>
                             <li class="page-item d-none d-sm-block"><a class="page-link text-secondary" href="#">8</a></li>
                             <li class="page-item d-none d-sm-block"><a class="page-link text-secondary" href="#">9</a></li>
                             <li class="page-item"><a class="page-link text-secondary" href="#">10</a></li>
@@ -566,7 +578,7 @@
                     <p class="small text-secondary text-center mb-0">
                         Shop.co © 2000-2023, All Rights Reserved
                     </p>
-                    <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex align-items-center justify-content-around">
                         <img
                             src="images/visa-card.svg"
                             alt=""

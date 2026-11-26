@@ -35,6 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".promo-banner-close").forEach((button) => {
+        button.addEventListener("click", () => {
+            button.closest(".promo-banner").remove();
+        });
+    });
+
     const priceSlider = document.querySelector(".category-price-slider");
 
     if (!priceSlider) {
