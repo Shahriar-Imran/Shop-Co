@@ -130,17 +130,17 @@
             </nav>
 
             <div class="row g-4">
-                <aside class="col-lg-3">
+                <aside class="col-12 col-lg-3">
                     <div class="offcanvas-lg offcanvas-start category-filter-panel border rounded-4" tabindex="-1" id="categoryFilters">
                         <div class="offcanvas-header d-lg-none border-bottom">
-                            <h2 class="fs-5 fw-bold mb-0" id="categoryFiltersTitle">Filters</h2>
+                            <h2 class="fs-5 fw-bold mb-0 text-dark" id="categoryFiltersTitle">Filters</h2>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#categoryFilters" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body p-0">
                             <div class="d-flex flex-column w-100 p-3">
                             <div class="d-none d-lg-flex justify-content-between align-items-center mb-2">
-                                <h2 class="fs-6 fw-bold mb-0">Filters</h2>
-                                <i class="bi bi-sliders text-secondary"></i>
+                                <h2 class="fs-6 fw-bold text-dark mb-0">Filters</h2>
+                                <i class="bi bi-sliders2-vertical text-secondary"></i>
                             </div>
                             <hr class="d-none d-lg-block my-2">
 
@@ -154,38 +154,43 @@
 
                             <hr class="my-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h3 class="small fw-bold mb-0">Price</h3>
-                                <i class="bi bi-chevron-up"></i>
+                                <h3 class="small fw-bold mb-0 text-dark">Price</h3>
+                                <i class="bi bi-chevron-up text-dark"></i>
                             </div>
                             <div class="px-2">
-                                <input type="range" class="form-range" min="50" max="200" value="200" aria-label="Maximum price">
-                                <div class="d-flex justify-content-between small text-dark mt-n2">
-                                    <span>$50</span><span>$200</span>
+                                <div class="category-price-slider">
+                                    <div class="category-price-track"></div>
+                                    <div class="category-price-selected"></div>
+                                    <input type="range" class="form-range category-price-min" min="50" max="200" value="50">
+                                    <input type="range" class="form-range category-price-max" min="50" max="200" value="200">
+                                </div>
+                                <div class="d-flex justify-content-between small text-dark fw-semibold">
+                                    <span class="category-min-price">$50</span><span class="category-max-price">$200</span>
                                 </div>
                             </div>
 
                             <hr class="my-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h3 class="small fw-bold mb-0">Colors</h3>
-                                <i class="bi bi-chevron-up"></i>
+                                <h3 class="small fw-bold mb-0 text-dark">Colors</h3>
+                                <i class="bi bi-chevron-up text-dark"></i>
                             </div>
                             <div class="d-flex flex-wrap gap-2">
-                                <button class="btn btn-success rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Green"></button>
-                                <button class="btn btn-danger rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Red"></button>
-                                <button class="btn btn-warning rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Yellow"></button>
-                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #f57900" aria-label="Orange"></button>
-                                <button class="btn btn-info rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Cyan"></button>
-                                <button class="btn btn-primary rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Blue"></button>
-                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #a020f0" aria-label="Purple"></button>
-                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #ed0c8b" aria-label="Pink"></button>
-                                <button class="btn btn-light border rounded-circle p-0" style="width: 22px; height: 22px" aria-label="White"></button>
-                                <button class="btn btn-dark rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Black"></button>
+                                <button class="btn btn-success rounded-circle p-0" style="width: 22px; height: 22px"></button>
+                                <button class="btn btn-danger rounded-circle p-0" style="width: 22px; height: 22px"></button>
+                                <button class="btn btn-warning rounded-circle p-0" style="width: 22px; height: 22px"></button>
+                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #f57900"></button>
+                                <button class="btn btn-info rounded-circle p-0" style="width: 22px; height: 22px"></button>
+                                <button class="btn btn-primary rounded-circle p-0" style="width: 22px; height: 22px"></button>
+                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #a020f0"></button>
+                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #ed0c8b"></button>
+                                <button class="btn btn-light border rounded-circle p-0" style="width: 22px; height: 22px"></button>
+                                <button class="btn btn-dark rounded-circle p-0" style="width: 22px; height: 22px"></button>
                             </div>
 
                             <hr class="my-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h3 class="small fw-bold mb-0">Size</h3>
-                                <i class="bi bi-chevron-up"></i>
+                                <h3 class="small fw-bold mb-0 text-dark">Size</h3>
+                                <i class="bi bi-chevron-up text-dark"></i>
                             </div>
                             <div class="d-flex flex-wrap gap-2">
                                 <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">XX-Small</button>
@@ -201,8 +206,8 @@
 
                             <hr class="my-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h3 class="small fw-bold mb-0">Dress Style</h3>
-                                <i class="bi bi-chevron-up"></i>
+                                <h3 class="small fw-bold mb-0 text-dark">Dress Style</h3>
+                                <i class="bi bi-chevron-up text-dark"></i>
                             </div>
                             <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-3">
                                 <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Casual <i class="bi bi-chevron-right"></i></a></li>
@@ -216,7 +221,7 @@
                     </div>
                 </aside>
 
-                <section class="col-lg-9" aria-labelledby="category-title">
+                <section class="col-lg-9">
                     <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
                         <div class="d-flex align-items-baseline flex-wrap gap-2">
                             <h1 class="fs-3 fw-bold text-dark mb-0" id="category-title">Casual</h1>
@@ -306,16 +311,16 @@
                     </div>
 
                     <hr class="my-4">
-                    <nav aria-label="Product pages" class="d-flex justify-content-between align-items-center">
+                    <nav class="pagination-area d-flex justify-content-between align-items-center">
                         <button class="btn btn-sm btn-outline-secondary px-2 py-1"><i class="bi bi-arrow-left"></i> <span class="d-none d-sm-inline">Previous</span></button>
                         <ul class="pagination pagination-sm mb-0">
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item disabled"><span class="page-link">...</span></li>
-                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">8</a></li>
-                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">9</a></li>
-                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item active"><a class="page-link text-dark" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
+                            <li class="page-item disabled text-secondary"><span class="page-link">...</span></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link text-secondary" href="#">8</a></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link text-secondary" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link text-secondary" href="#">10</a></li>
                         </ul>
                         <button class="btn btn-sm btn-outline-secondary px-2 py-1"><span class="d-none d-sm-inline">Next</span> <i class="bi bi-arrow-right"></i></button>
                     </nav>
