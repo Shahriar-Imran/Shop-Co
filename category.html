@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://db.onlinewebfonts.com/c/e5cf4323214de97c3428d64ece016410?family=Integral+CF"
+            rel="stylesheet"
+        />
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link rel="stylesheet" href="css/font-awesome.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Shop.Co</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div
+                class="container d-flex justify-content-between align-items-center gap-3"
+            >
+                <div
+                    class="navbar-left d-flex justify-content-center align-items-center"
+                >
+                    <button
+                        class="navbar-toggler border-0 text-dark"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h1 class="navbar-brand fs-2 mb-0">shop.co</h1>
+                </div>
+                <div
+                    class="collapse navbar-collapse"
+                    style="gap: 24px"
+                    id="navbarNavDropdown"
+                >
+                    <ul class="navbar-nav d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark fw-regular"
+                                >Shop <i class="fas fa-angle-down"></i
+                            ></a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="#top-selling"
+                                class="nav-link text-dark fw-regular"
+                                >On Sale</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                href="#new-arrival"
+                                class="nav-link text-dark fw-regular"
+                                >New Arrival</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-dark fw-regular"
+                                >Brands</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="navbar-right d-flex align-items-center gap-3 flex-lg-grow-1 justify-content-end"
+                >
+                    <div class="input-group flex-grow-1 d-none d-lg-flex">
+                        <span
+                            class="input-group-text rounded-start-5 bg-primary"
+                            ><i class="bi bi-search"></i
+                        ></span>
+                        <input
+                            type="text"
+                            name="search"
+                            id="search"
+                            class="form-control rounded-end-5 border-0 bg-primary"
+                            placeholder="Search for products.."
+                        />
+                    </div>
+
+                    <a href="#" class="d-lg-none text-dark">
+                        <i class="bi bi-search fs-5"></i>
+                    </a>
+
+                    <div
+                        class="nav-icons d-flex justify-content-center align-items-center"
+                        style="gap: 14px"
+                        flex-shrink-0
+                    >
+                        <a href="#" aria-label="Cart"
+                            ><img
+                                src="images/cart-icon.svg"
+                                alt=""
+                                class="img-fluid"
+                                width="24"
+                                height="24"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="images/user-icon.svg"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="category-page container mt-3 mb-5">
+            <nav class="mb-3">
+                <ol class="breadcrumb small mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active text-dark" aria-current="page">Casual</li>
+                </ol>
+            </nav>
+
+            <div class="row g-4">
+                <aside class="col-lg-3">
+                    <div class="offcanvas-lg offcanvas-start category-filter-panel border rounded-4" tabindex="-1" id="categoryFilters">
+                        <div class="offcanvas-header d-lg-none border-bottom">
+                            <h2 class="fs-5 fw-bold mb-0" id="categoryFiltersTitle">Filters</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#categoryFilters" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body p-0">
+                            <div class="d-flex flex-column w-100 p-3">
+                            <div class="d-none d-lg-flex justify-content-between align-items-center mb-2">
+                                <h2 class="fs-6 fw-bold mb-0">Filters</h2>
+                                <i class="bi bi-sliders text-secondary"></i>
+                            </div>
+                            <hr class="d-none d-lg-block my-2">
+
+                            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-3">
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">T-shirts <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Shorts <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Shirts <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Hoodie <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Jeans <i class="bi bi-chevron-right"></i></a></li>
+                            </ul>
+
+                            <hr class="my-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="small fw-bold mb-0">Price</h3>
+                                <i class="bi bi-chevron-up"></i>
+                            </div>
+                            <div class="px-2">
+                                <input type="range" class="form-range" min="50" max="200" value="200" aria-label="Maximum price">
+                                <div class="d-flex justify-content-between small text-dark mt-n2">
+                                    <span>$50</span><span>$200</span>
+                                </div>
+                            </div>
+
+                            <hr class="my-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="small fw-bold mb-0">Colors</h3>
+                                <i class="bi bi-chevron-up"></i>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-success rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Green"></button>
+                                <button class="btn btn-danger rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Red"></button>
+                                <button class="btn btn-warning rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Yellow"></button>
+                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #f57900" aria-label="Orange"></button>
+                                <button class="btn btn-info rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Cyan"></button>
+                                <button class="btn btn-primary rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Blue"></button>
+                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #a020f0" aria-label="Purple"></button>
+                                <button class="btn rounded-circle p-0" style="width: 22px; height: 22px; background-color: #ed0c8b" aria-label="Pink"></button>
+                                <button class="btn btn-light border rounded-circle p-0" style="width: 22px; height: 22px" aria-label="White"></button>
+                                <button class="btn btn-dark rounded-circle p-0" style="width: 22px; height: 22px" aria-label="Black"></button>
+                            </div>
+
+                            <hr class="my-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="small fw-bold mb-0">Size</h3>
+                                <i class="bi bi-chevron-up"></i>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">XX-Small</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">X-Small</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">Small</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">Medium</button>
+                                <button class="btn btn-sm btn-dark rounded-pill px-3 py-1">Large</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">X-Large</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">XX-Large</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">3X-Large</button>
+                                <button class="btn btn-sm btn-light rounded-pill text-secondary px-3 py-1">4X-Large</button>
+                            </div>
+
+                            <hr class="my-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h3 class="small fw-bold mb-0">Dress Style</h3>
+                                <i class="bi bi-chevron-up"></i>
+                            </div>
+                            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-3">
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Casual <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Formal <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Party <i class="bi bi-chevron-right"></i></a></li>
+                                <li><a href="#" class="d-flex justify-content-between text-reset text-decoration-none">Gym <i class="bi bi-chevron-right"></i></a></li>
+                            </ul>
+                            <button class="btn btn-dark rounded-pill w-100 px-3 py-2" type="button">Apply Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="col-lg-9" aria-labelledby="category-title">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                        <div class="d-flex align-items-baseline flex-wrap gap-2">
+                            <h1 class="fs-3 fw-bold text-dark mb-0" id="category-title">Casual</h1>
+                            <span class="small text-secondary">Showing 1-10 of 100 Products</span>
+                        </div>
+                        <button class="btn btn-light rounded-circle p-2 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryFilters" aria-controls="categoryFilters" aria-label="Open filters">
+                            <i class="bi bi-sliders2-vertical"></i>
+                        </button>
+                        <div class="d-none d-lg-block small text-secondary">
+                            Sort by: <button class="btn btn-sm p-0 text-dark fw-semibold">Most Popular <i class="bi bi-chevron-down"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 g-lg-4">
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/top-tshirt.svg" alt="Graphic T-shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Gradient Graphic T-shirt</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span><span class="small">3.5/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$145</p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/top-shirt.svg" alt="Striped collared shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Polo with Tipping Details</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span class="small">4.5/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$180</p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/new-black.svg" alt="Black T-shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Black Striped T-shirt</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span class="small">5.0/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$120 <del class="text-secondary">$150</del> <span class="badge rounded-pill bg-danger bg-opacity-10 text-danger fw-normal">-30%</span></p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/new-pant.svg" alt="Blue skinny fit jeans" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Skinny Fit Jeans</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span><span class="small">3.5/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$240 <del class="text-secondary">$260</del> <span class="badge rounded-pill bg-danger bg-opacity-10 text-danger fw-normal">-20%</span></p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/new-shirt.svg" alt="Checkered shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Checkered Shirt</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span><span class="small">4.5/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$180</p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/new-orange.svg" alt="Orange and black striped T-shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Sleeve Striped T-shirt</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span><span class="small">4.5/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$130 <del class="text-secondary">$160</del> <span class="badge rounded-pill bg-danger bg-opacity-10 text-danger fw-normal">-30%</span></p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/top-shirt.svg" alt="Green vertical striped shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Vertical Striped Shirt</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span class="small">5.0/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$212 <del class="text-secondary">$232</del> <span class="badge rounded-pill bg-danger bg-opacity-10 text-danger fw-normal">-20%</span></p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/top-tshirt.svg" alt="Orange graphic T-shirt" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Courage Graphic T-shirt</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span class="small">4.0/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$145</p>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <article class="category-product">
+                                <img src="images/top-half-pant.svg" alt="Bermuda shorts" class="img-fluid w-100">
+                                <h2 class="small fw-semibold text-dark text-truncate mt-2 mb-1">Loose Fit Bermuda Shorts</h2>
+                                <div class="d-flex align-items-center gap-1"><span class="rating-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span class="small">3.0/5</span></div>
+                                <p class="small fw-bold text-dark mb-0">$80</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <nav aria-label="Product pages" class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-sm btn-outline-secondary px-2 py-1"><i class="bi bi-arrow-left"></i> <span class="d-none d-sm-inline">Previous</span></button>
+                        <ul class="pagination pagination-sm mb-0">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item disabled"><span class="page-link">...</span></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item d-none d-sm-block"><a class="page-link" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline-secondary px-2 py-1"><span class="d-none d-sm-inline">Next</span> <i class="bi bi-arrow-right"></i></button>
+                    </nav>
+                </section>
+            </div>
+        </main>
+
+        <section class="newsletter z-3 position-relative">
+            <div
+                class="container mx-auto bg-dark text-white rounded-4 p-4 p-md-5"
+            >
+                <div class="row align-items-center g-4">
+                    <div class="col-md-7">
+                        <h2
+                            class="fw-bold text-uppercase lh-sm mb-0"
+                            id="newsletter-title"
+                        >
+                            Stay up to date about our latest offers
+                        </h2>
+                    </div>
+                    <div class="col-md-5">
+                        <form class="d-flex flex-column gap-2">
+                            <div
+                                class="input-group rounded-pill overflow-hidden bg-white"
+                            >
+                                <span
+                                    class="input-group-text border-0 bg-white text-secondary"
+                                >
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <input
+                                    type="email"
+                                    class="form-control border-0 rounded-end-pill ps-0"
+                                    placeholder="Enter your email address"
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-light rounded-pill"
+                            >
+                                Subscribe to Newsletter
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-primary">
+            <div class="container mt-n6 pt-6 pb-4 z-1 position-relative">
+                <div class="row g-4 pt-4 pt-md-5 pb-4">
+                    <div class="col-12 col-lg-3">
+                        <h2 class="navbar-brand fs-3 text-dark mb-2">
+                            SHOP.CO
+                        </h2>
+                        <p class="small text-secondary mb-3">
+                            We have clothes that suits your style and which
+                            you're proud to wear. From women to men.
+                        </p>
+                        <div class="social-icons d-flex gap-2">
+                            <div
+                                class="social-icon social-tw position-relative bg-light"
+                            >
+                                <a href="#" class="position-absolute text-dark"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="social-icon social-fb position-relative bg-dark"
+                            >
+                                <a href="#" class="position-absolute text-light"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="social-icon social-insta position-relative bg-light"
+                            >
+                                <a href="#" class="position-absolute text-dark"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="social-icon social-git position-relative bg-light"
+                            >
+                                <a href="#" class="position-absolute text-dark"
+                                    ><i class="fab fa-github"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2 quick-links">
+                        <h3 class="small text-uppercase mb-3 text-dark">
+                            Company
+                        </h3>
+                        <ul
+                            class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Features</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Works</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Career</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h3 class="small text-uppercase mb-3 text-dark">
+                            Help
+                        </h3>
+                        <ul
+                            class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Customer Support</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Delivery Details</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Terms &amp; Conditions</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h3 class="small text-uppercase mb-3 text-dark">FAQ</h3>
+                        <ul
+                            class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Account</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Manage Deliveries</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Orders</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Payments</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h3 class="small text-uppercase mb-3 text-dark">
+                            Resources
+                        </h3>
+                        <ul
+                            class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Free eBooks</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Development Tutorial</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >How-to Blog</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-reset text-decoration-none"
+                                    >Youtube Playlist</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="my-0 py-1 text-secondary" />
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pt-3"
+                >
+                    <p class="small text-secondary text-center mb-0">
+                        Shop.co © 2000-2023, All Rights Reserved
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                        <img
+                            src="images/visa-card.svg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                        <img
+                            src="images/master-card.svg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                        <img
+                            src="images/paypal-card.svg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                        <img
+                            src="images/ipay-card.svg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                        <img
+                            src="images/gpay-card.svg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
