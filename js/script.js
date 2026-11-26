@@ -41,6 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    const navbar = document.querySelector(".navbar");
+
+    if (navbar) {
+        const updateNavbar = () => {
+            navbar.classList.toggle("navbar-scrolled", window.scrollY > 0);
+        };
+
+        updateNavbar();
+        window.addEventListener("scroll", updateNavbar, { passive: true });
+    }
+
     const priceSlider = document.querySelector(".category-price-slider");
 
     if (!priceSlider) {
