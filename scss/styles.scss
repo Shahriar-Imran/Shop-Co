@@ -3,7 +3,10 @@
     font-family: "Integral CF", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
+}
 
+header {
+    background-color: rgba(242, 240, 241, 1) !important;
 }
 
 .section-title {
@@ -50,11 +53,16 @@
 }
 
 .brands img {
-    height: 60px; 
+    height: 60px;
 }
 
 .card-img {
-    margin-bottom: 10px;
+    margin-bottom: auto;
+}
+
+.card-title {
+    min-height: 2em;
+    line-height: 1em;
 }
 
 .dess-style-img {
@@ -86,7 +94,9 @@
 }
 
 .navbar {
-    transition: background-color 0.2s ease, border-color 0.2s ease;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
     border-bottom: 1px solid transparent;
 }
 
@@ -101,8 +111,6 @@
 .promo-banner {
     font-size: 10px;
 }
-
-
 
 .dess-style-img {
     display: block;
@@ -211,7 +219,7 @@
 }
 
 .breadcrumb {
-    --bs-breadcrumb-divider: '>';
+    --bs-breadcrumb-divider: ">";
 }
 
 .category-filter-panel {
@@ -334,7 +342,6 @@
     .brands img {
         height: 50px;
     }
-
 }
 
 @media (max-width: 768px) {
